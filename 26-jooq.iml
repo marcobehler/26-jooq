@@ -18,5 +18,8 @@
     <orderEntry type="library" name="Maven: org.jooq:jooq-meta:3.11.10" level="project" />
     <orderEntry type="library" name="Maven: org.jooq:jooq-codegen:3.11.10" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.199" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
   </component>
 </module>

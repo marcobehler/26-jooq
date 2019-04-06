@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e75ed23-9f66-489a-a912-2a9bc7dce892" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/26-jooq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/26-jooq.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/marcobehler/courses/jooq/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,14 +54,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="459">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="51" column="45" lean-forward="true" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -104,11 +123,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cde0ce9f-ac7d-42bb-a411-d54cd62a0cdc/console.sql" />
         <option value="$PROJECT_DIR$/sql.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/setup.sql" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/Keys.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/TableConstraints.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/Collations.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
       </list>
     </option>
   </component>
@@ -247,6 +267,13 @@
             </path>
             <path>
               <item name="26-jooq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="26-jooq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="26-jooq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -320,7 +347,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554546554207</updated>
-      <workItem from="1554546557870" duration="2889000" />
+      <workItem from="1554546557870" duration="3129000" />
     </task>
     <task id="LOCAL-00001" summary="1- Maven Project Setup">
       <created>1554547340211</created>
@@ -336,13 +363,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554547943300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3 - Code generation">
+      <created>1554549547561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554549547561</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4 - Basic Selects">
+      <created>1554549557723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554549557723</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JooQTest_name - 2019.04.06 at 12h 32m 50s.xml">
-      <configuration name="JooQTest.name" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JooQTest_name - 2019.04.06 at 12h 32m 59s.xml">
       <configuration name="JooQTest.name" configurationId="JUnit" />
     </history-entry>
@@ -370,19 +408,23 @@
     <history-entry file="JooQTest_name - 2019.04.06 at 13h 14m 09s.xml">
       <configuration name="JooQTest.name" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JooQTest_name - 2019.04.06 at 13h 18m 26s.xml">
+      <configuration name="JooQTest.name" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2889000" />
+    <option name="totallyTimeSpent" value="3129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" weight="0.31831256" />
       <window_info anchor="bottom" id="Terminal" />
@@ -393,7 +435,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32981783" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34036434" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34036434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,7 +483,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1- Maven Project Setup" />
     <MESSAGE value="2 - Database Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 - Database Setup" />
+    <MESSAGE value="3 - Code generation" />
+    <MESSAGE value="4 - Basic Selects" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 - Basic Selects" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/AppTest.java">
@@ -476,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -574,11 +611,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="459">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="51" column="45" lean-forward="true" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
