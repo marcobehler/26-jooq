@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e75ed23-9f66-489a-a912-2a9bc7dce892" name="Default Changelist" comment="">
+    <list default="true" id="1e75ed23-9f66-489a-a912-2a9bc7dce892" name="Default Changelist" comment="7 - pojos and daos">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" afterDir="false" />
     </list>
@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="275">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,11 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="204">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/daos/CoursesDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-372">
+            <state relative-caret-position="306">
               <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
@@ -154,9 +166,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseDao.java" />
       </list>
     </option>
   </component>
@@ -408,7 +421,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JooQTest.saving_our_first_pojo">
+    <configuration name="JooQTest.saving_our_first_pojo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="26-jooq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marcobehler.courses.jooq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marcobehler.courses.jooq" />
+      <option name="MAIN_CLASS_NAME" value="com.marcobehler.courses.jooq.JooQTest" />
+      <option name="METHOD_NAME" value="saving_our_first_pojo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JooQTest.saving_our_first_record" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="26-jooq" />
       <extension name="coverage">
@@ -427,6 +456,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JooQTest.saving_our_first_pojo" />
         <item itemvalue="JUnit.JooQTest.saving_our_first_record" />
       </list>
     </recent_temporary>
@@ -441,7 +471,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554546554207</updated>
-      <workItem from="1554546557870" duration="5092000" />
+      <workItem from="1554546557870" duration="6227000" />
     </task>
     <task id="LOCAL-00001" summary="1- Maven Project Setup">
       <created>1554547340211</created>
@@ -499,13 +529,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554550953572</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="7 - pojos and daos">
+      <created>1554551686303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554551686303</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JooQTest_name - 2019.04.06 at 13h 23m 14s.xml">
-      <configuration name="JooQTest.name" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JooQTest_name - 2019.04.06 at 13h 23m 29s.xml">
       <configuration name="JooQTest.name" configurationId="JUnit" />
     </history-entry>
@@ -533,9 +567,12 @@
     <history-entry file="JooQTest_saving_our_first_record - 2019.04.06 at 13h 53m 54s.xml">
       <configuration name="JooQTest.saving_our_first_record" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 13h 55m 28s.xml">
+      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5092000" />
+    <option name="totallyTimeSpent" value="6227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -546,7 +583,7 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" weight="0.31831256" />
       <window_info anchor="bottom" id="Terminal" />
@@ -557,8 +594,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.32981783" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4506232" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3835091" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4295302" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33652925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -609,19 +646,10 @@
     <MESSAGE value="4 - Basic Selects" />
     <MESSAGE value="5 - Enable Jooq sql logging" />
     <MESSAGE value="6 - Creating a CourseService for dao methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 - Creating a CourseService for dao methods" />
+    <MESSAGE value="7 - pojos and daos" />
+    <option name="LAST_COMMIT_MESSAGE" value="7 - pojos and daos" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="coursesRecord.getId()" language="JAVA" />
@@ -785,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Purchases.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -816,20 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/daos/CoursesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -840,20 +844,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="169">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/daos/CoursesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
