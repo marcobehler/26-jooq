@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="H2 - database">
+  <database-model serializer="dbm" dbms="H2" family-id="H2" format-version="4.15">
+    <root id="1">
+      <ServerVersion>1.4.196</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="DATABASE">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="COURSES"/>
+    <table id="6" parent="4" name="PURCHASES"/>
+    <table id="7" parent="4" name="USERS"/>
+    <column id="8" parent="5" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_ED9C174C_B087_4199_A1D8_8B14B2C7EE01)</DefaultExpression>
+    </column>
+    <column id="9" parent="5" name="TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR|12s</DataType>
+    </column>
+    <column id="10" parent="5" name="DESCRIPTION">
+      <Position>3</Position>
+      <DataType>VARCHAR|12s</DataType>
+    </column>
+    <column id="11" parent="5" name="PRICE">
+      <Position>4</Position>
+      <DataType>SMALLINT(5)|5s</DataType>
+    </column>
+    <index id="12" parent="5" name="PRIMARY_KEY_6">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="13" parent="5" name="CONSTRAINT_6">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="14" parent="6" name="USER_ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+    </column>
+    <column id="15" parent="6" name="COURSE_ID">
+      <Position>2</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+    </column>
+    <column id="16" parent="6" name="PURCHASED_AT">
+      <Position>3</Position>
+      <DataType>TIMESTAMP(23,10)|93s</DataType>
+    </column>
+    <index id="17" parent="6" name="CONSTRAINT_INDEX_3">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+    </index>
+    <index id="18" parent="6" name="CONSTRAINT_INDEX_3B">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COURSE_ID</ColNames>
+    </index>
+    <foreign-key id="19" parent="6" name="CONSTRAINT_3">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>CONSTRAINT_4</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="20" parent="6" name="CONSTRAINT_3B">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COURSE_ID</ColNames>
+      <RefTableName>COURSES</RefTableName>
+      <RefKeyName>CONSTRAINT_6</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="21" parent="7" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_7BCD2E93_6134_46E7_A5C0_06300E7EC263)</DefaultExpression>
+    </column>
+    <column id="22" parent="7" name="EMAIL">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="23" parent="7" name="PRIMARY_KEY_4">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="7" name="CONSTRAINT_4">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
