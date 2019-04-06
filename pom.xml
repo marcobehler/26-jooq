@@ -101,11 +101,17 @@
                                  Watch out for case-sensitivity. Depending on your database, this might be important! -->
                             <includes>.*</includes>
 
+
                             <!-- All elements that are excluded from your schema
                                  (A Java regular expression. Use the pipe to separate several expressions).
                                  Excludes match before includes, i.e. excludes have a higher priority -->
                             <excludes></excludes>
+
                         </database>
+
+                        <generate>
+                            <daos>true</daos>
+                        </generate>
 
                         <target>
                             <!-- The destination package of your generated classes (within the destination directory) -->

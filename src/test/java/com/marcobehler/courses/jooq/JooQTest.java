@@ -1,7 +1,7 @@
 package com.marcobehler.courses.jooq;
 
 import com.marcobehler.course.service.CourseService;
-import com.marcobehler.courses.jooq.public_.tables.records.CoursesRecord;
+import com.marcobehler.courses.jooq.public_.tables.pojos.Courses;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -10,7 +10,13 @@ public class JooQTest {
 
     @Test
     public void saving_our_first_record() {
-        CoursesRecord record = new CourseService().save("Hibernate rockz", "Hibernate is so much better!", 5000);
-        assertThat(record.getId()).isNotNull();
+        Courses c = new Courses();
+
+        c.setTitle("Hibernate rockz");
+        c.setDescription("Hibernate is so much better!");
+        c.setPrice((short) 5000);
+
+        Courses pojo = new CourseService().save(c);
+        assertThat(pojo.getId()).isNotNull();
     }
 }

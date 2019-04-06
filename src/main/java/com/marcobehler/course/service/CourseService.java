@@ -1,10 +1,10 @@
 package com.marcobehler.course.service;
 
-import com.marcobehler.courses.jooq.public_.tables.Courses;
+import com.marcobehler.courses.jooq.public_.tables.daos.CoursesDao;
+import com.marcobehler.courses.jooq.public_.tables.pojos.Courses;
 import com.marcobehler.courses.jooq.public_.tables.records.CoursesRecord;
-import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
-import org.jooq.impl.DSL;
+import org.jooq.impl.DefaultConfiguration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,22 +12,17 @@ import java.sql.SQLException;
 
 public class CourseService {
 
-
     public CoursesRecord findById(Integer id) {
         //
         return null;
 
     }
 
-    public CoursesRecord save(String title, String description, Integer price) {
+    public Courses save(Courses courses) {
         try (Connection connection = getConnection()) {
-            DSLContext create = DSL.using(connection, SQLDialect.H2);
-            CoursesRecord coursesRecord = create.newRecord(Courses.COURSES);
-            coursesRecord.setTitle(title);
-            coursesRecord.setDescription(description);
-            coursesRecord.setPrice(price.shortValue());
-            coursesRecord.store();
-            return coursesRecord;
+            CoursesDao coursesDao = new CoursesDao(new DefaultConfiguration().set(connection).set(SQLDialect.H2));
+            coursesDao.insert(courses);
+            return courses;
         } catch (SQLException e) {
             e.printStackTrace();
             throw new IllegalStateException(e);
