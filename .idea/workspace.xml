@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e75ed23-9f66-489a-a912-2a9bc7dce892" name="Default Changelist" comment="8 hikari datasource">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java" afterDir="false" />
+    <list default="true" id="1e75ed23-9f66-489a-a912-2a9bc7dce892" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/26-jooq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/26-jooq.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/marcobehler/courses/jooq/JooQTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+            <state relative-caret-position="165">
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="325">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +118,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.6.RELEASE/spring-test-5.1.6.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+            <state>
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,28 +137,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+            <state relative-caret-position="290">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#2704#2705#0" expanded="true" />
+                <element signature="e#2807#2808#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1467#1468#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/daos/CoursesDao.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.11.10/jooq-3.11.10-sources.jar!/org/jooq/impl/DataSourceConnectionProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            <state relative-caret-position="393">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#662#715#0" expanded="true" />
+                <element signature="e#2296#2297#0" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.11.10/jooq-3.11.10-sources.jar!/org/jooq/TransactionProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.6.RELEASE/spring-jdbc-5.1.6.RELEASE-sources.jar!/org/springframework/jdbc/datasource/TransactionAwareDataSourceProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-493">
+              <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -166,16 +188,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/Collations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/QueryStatistics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="196">
               <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
@@ -220,12 +233,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/Collations.java" />
         <option value="$PROJECT_DIR$/src/test/resources/logback-test.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/course/service/CourseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/daos/CoursesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java" />
       </list>
     </option>
@@ -445,7 +458,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JooQTest.saving_our_first_pojo">
+  <component name="RunManager" selected="JUnit.JooQTest.savingPojoTwice">
     <configuration name="JooQTest.our_first_join" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="26-jooq" />
       <extension name="coverage">
@@ -457,6 +470,22 @@
       <option name="PACKAGE_NAME" value="com.marcobehler.courses.jooq" />
       <option name="MAIN_CLASS_NAME" value="com.marcobehler.courses.jooq.JooQTest" />
       <option name="METHOD_NAME" value="our_first_join" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JooQTest.savingPojoTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="26-jooq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marcobehler.courses.jooq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.marcobehler.courses.jooq" />
+      <option name="MAIN_CLASS_NAME" value="com.marcobehler.courses.jooq.JooQTest" />
+      <option name="METHOD_NAME" value="savingPojoTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -496,6 +525,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JooQTest.savingPojoTwice" />
         <item itemvalue="JUnit.JooQTest.saving_our_first_pojo" />
         <item itemvalue="JUnit.JooQTest.our_first_join" />
         <item itemvalue="JUnit.JooQTest.saving_our_first_record" />
@@ -512,7 +542,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554546554207</updated>
-      <workItem from="1554546557870" duration="8563000" />
+      <workItem from="1554546557870" duration="9491000" />
     </task>
     <task id="LOCAL-00001" summary="1- Maven Project Setup">
       <created>1554547340211</created>
@@ -591,19 +621,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554557968909</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="springifying">
+      <created>1554559139711</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1554559139711</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JooQTest_saving_our_first_record - 2019.04.06 at 13h 53m 54s.xml">
-      <configuration name="JooQTest.saving_our_first_record" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 13h 55m 28s.xml">
-      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 15h 28m 39s.xml">
-      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 15h 28m 40s.xml">
       <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
     </history-entry>
@@ -625,9 +653,18 @@
     <history-entry file="JooQTest_our_first_join - 2019.04.06 at 15h 34m 41s.xml">
       <configuration name="JooQTest.our_first_join" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 15h 58m 27s.xml">
+      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 15h 58m 45s.xml">
+      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JooQTest_saving_our_first_pojo - 2019.04.06 at 16h 12m 39s.xml">
+      <configuration name="JooQTest.saving_our_first_pojo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8563000" />
+    <option name="totallyTimeSpent" value="9491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -638,7 +675,7 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" weight="0.31831256" />
       <window_info anchor="bottom" id="Spring" />
@@ -650,8 +687,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.32981783" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.253116" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33652925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28092042" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4793864" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -704,9 +741,20 @@
     <MESSAGE value="6 - Creating a CourseService for dao methods" />
     <MESSAGE value="7 - pojos and daos" />
     <MESSAGE value="8 hikari datasource" />
-    <option name="LAST_COMMIT_MESSAGE" value="8 hikari datasource" />
+    <MESSAGE value="springifying" />
+    <option name="LAST_COMMIT_MESSAGE" value="springifying" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="coursesRecord.getId()" language="JAVA" />
@@ -843,16 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/public_/tables/pojos/Courses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -985,21 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/Collations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/QueryStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/Catalogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
@@ -1017,30 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/26-jooq.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.6.RELEASE/spring-test-5.1.6.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1051,14 +1051,102 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.6.RELEASE/spring-test-5.1.6.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="68" column="59" lean-forward="true" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+          <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/Collations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/pojos/Catalogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.6.RELEASE/spring-jdbc-5.1.6.RELEASE.jar!/org/springframework/jdbc/datasource/TransactionAwareDataSourceProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.6.RELEASE/spring-jdbc-5.1.6.RELEASE-sources.jar!/org/springframework/jdbc/datasource/TransactionAwareDataSourceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/26-jooq.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.11.10/jooq-3.11.10-sources.jar!/org/jooq/impl/DataSourceConnectionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/courses/jooq/information_schema/tables/records/FunctionAliasesRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.11.10/jooq-3.11.10-sources.jar!/org/jooq/TransactionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/marcobehler/MySpringContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/marcobehler/courses/jooq/JooQTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="325">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

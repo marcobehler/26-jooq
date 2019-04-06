@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -33,7 +34,6 @@ public class JooQTest {
         c.setDescription("Hibernate is so much better!");
         c.setPrice((short) 5000);
 
-
         dao.insert(c);
         assertThat(c.getId()).isNotNull();
 
@@ -41,6 +41,20 @@ public class JooQTest {
         assertThat(course).isNotNull();
         assertThat(course.getTitle()).isEqualTo(c.getTitle());
     }
+
+    @Test
+    @Transactional
+    public void savingPojoTwice() {
+        Courses c = new Courses();
+
+        c.setTitle("Lulu");
+        c.setDescription("Lulu");
+        c.setPrice((short) 5000);
+
+        dao.insert(c);
+        System.out.println("c = " + c);
+    }
+
 
     @Test
     public void our_first_join() {
