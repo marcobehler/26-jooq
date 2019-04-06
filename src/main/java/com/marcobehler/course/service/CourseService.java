@@ -3,8 +3,6 @@ package com.marcobehler.course.service;
 import com.marcobehler.courses.jooq.public_.tables.Courses;
 import com.marcobehler.courses.jooq.public_.tables.records.CoursesRecord;
 import org.jooq.DSLContext;
-import org.jooq.Record;
-import org.jooq.Result;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
 

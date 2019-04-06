@@ -4,11 +4,13 @@ import com.marcobehler.course.service.CourseService;
 import com.marcobehler.courses.jooq.public_.tables.records.CoursesRecord;
 import org.junit.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class JooQTest {
 
     @Test
-    public void name() {
+    public void saving_our_first_record() {
         CoursesRecord record = new CourseService().save("Hibernate rockz", "Hibernate is so much better!", 5000);
-        System.out.println("record = " + record);
+        assertThat(record.getId()).isNotNull();
     }
 }
