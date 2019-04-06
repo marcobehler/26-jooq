@@ -5,10 +5,12 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.jooq.*;
 import org.jooq.exception.DataAccessException;
 import org.jooq.impl.DSL;
+import org.jooq.impl.DataSourceConnectionProvider;
 import org.jooq.impl.DefaultConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
@@ -29,6 +31,12 @@ public class MySpringContext {
     @Bean
     public PlatformTransactionManager transactionManager() {
         return new DataSourceTransactionManager(datasource());
+    }
+
+
+    @Bean
+    public DataSourceConnectionProvider dataSourceConnectionProvider() {
+        return new DataSourceConnectionProvider(new TransactionAwareDataSourceProxy(datasource()));
     }
 
     @Bean
@@ -84,6 +92,7 @@ public class MySpringContext {
 
     @Bean
     public Configuration configuration() {
-        return new DefaultConfiguration().set(datasource()).set(SQLDialect.H2);
+        return new DefaultConfiguration().set(dataSourceConnectionProvider()
+        ).set(SQLDialect.H2);
     }
 }

@@ -52,6 +52,7 @@ public class JooQTest {
         c.setPrice((short) 5000);
 
         dao.insert(c);
+
         System.out.println("c = " + c);
     }
 
