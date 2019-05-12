@@ -11,13 +11,14 @@ import java.util.List;
 @Controller
 public class HtmlController {
 
-    private List<Article> db = Arrays.asList(new Article(1, "Marco", LocalDate.now(), "This is my first great blog post!", "Java and Kotlin"),
+    private List<Article> articles = Arrays.asList(
+            new Article(1, "Marco", LocalDate.now(), "This is my first great blog post!", "Java and Kotlin"),
             new Article(2, "Marco", LocalDate.now().minusDays(5), "This is my second blog post", "Java & JooQ"));
 
     @GetMapping("/")
     public String blog(Model model) {
         model.addAttribute("title", "Blog");
-        model.addAttribute("articles", db);
+        model.addAttribute("articles", articles);
         return "blog";
     }
 }
