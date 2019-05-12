@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"> Title</title>
+</head>
+<body>
+
+<h1>Welcome To The New And Fancy Blog</h1>
+<div class="articles">
+    <div th:each="article: ${articles}">
+        <div class="article-header">
+            <h2 ><a href="/article/" th:href="'/articles/' + ${article.id}" th:text="${article.title}"></a></h2>
+            <div >By  <strong th:text="${article.author}">[author]</strong>, on <strong th:text="${article.publicationDate}">{publicationDate]</strong></div>
+        </div>
+        <div class="article-description" th:text="${article.headline}">
+        </div>
+    </div>
+</div>
+</body>
+</html>
