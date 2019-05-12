@@ -32,7 +32,7 @@ public class JooQTest {
 
         c.setTitle("Hibernate rockz");
         c.setDescription("Hibernate is so much better!");
-        c.setPrice((short) 5000);
+        c.setPrice(5000);
 
         dao.insert(c);
         assertThat(c.getId()).isNotNull();
@@ -49,7 +49,7 @@ public class JooQTest {
 
         c.setTitle("Lulu");
         c.setDescription("Lulu");
-        c.setPrice((short) 5000);
+        c.setPrice(5000);
 
         dao.insert(c);
 
