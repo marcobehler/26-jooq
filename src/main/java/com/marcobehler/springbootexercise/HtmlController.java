@@ -1,24 +1,34 @@
 package com.marcobehler.springbootexercise;
 
+import com.marcobehler.springbootexercise.jooq.public_.tables.daos.ArticlesDao;
+import com.marcobehler.springbootexercise.jooq.public_.tables.pojos.Articles;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class HtmlController {
 
-    private List<Article> articles = Arrays.asList(
-            new Article(1, "Marco", LocalDate.now(), "This is my first great blog post!", "Java and Kotlin"),
-            new Article(2, "Marco", LocalDate.now().minusDays(5), "This is my second blog post", "Java & JooQ"));
+    @Autowired
+    private ArticlesDao articlesDao;
 
     @GetMapping("/")
     public String blog(Model model) {
         model.addAttribute("title", "Blog");
-        model.addAttribute("articles", articles);
+        model.addAttribute("articles", articlesDao.findAll());
         return "blog";
     }
+
+    @GetMapping("/articles/{id}")
+    public String detailView(Model model, @PathVariable Integer id) {
+        Articles article = articlesDao.findById(id);
+
+        model.addAttribute("title", article.getTitle());
+        return "blog-detail";
+    }
+
+
+
 }
